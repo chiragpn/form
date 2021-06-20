@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Job Portal</title>
+	<style type="text/css">
+		fieldset {
+			background-color: gray;
+		}
+		legend {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="background-color: gray; color: red;">Job Portal Form</h1>
+	<form action="">
+		<fieldset>
+			<legend><b>Personal Details</b></legend>
+			<table>
+				<tr><td><label>Name:</label></td><td><input type="text" name="Name" placeholder="Full Name" size="20"></td></tr>
+
+				<tr><td><label>Email:</label></td><td><input type="email" name="mail" placeholder="eg: xyz@gmail.com" size="20"></td></tr>
+
+				<tr><td><label>Mobile:</label></td><td><input type="tel" name="mob" placeholder="eg: 0123456789" size="20"></td></tr>
+
+				<tr><td><label>DOB:</label></td><td><input type="date" name="dob" size="14"></td></tr></td></tr>
+
+				<tr><td><label>Gender:</label></td><td><input type="radio" name="gender" value="M">Male<input type="radio" name="gender" value="F">Female<input type="radio" name="gender" value="C">Custom</td></tr>
+
+				<tr><td><label>Address:</label></td><td><textarea rows="5" cols="50"></textarea></td></tr>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend><b>Education Details</b></legend>
+			<table>
+				<tr><td><label>Qualification:</label></td>
+					<td><select name="degree">
+						<option value="be">BE</option>
+						<option value="btech">B.Tech</option>
+						<option value="bsc">BSc</option>
+						<option value="msc">MSc</option>
+				</select></td></tr>
+
+				<tr><td><label>Stream:</label></td>
+					<td><select name="branch">
+						<option value="cs">CS</option>
+						<option value="ec">EC</option>
+						<option value="is">IS</option>
+						<option value="cv">CV</option>
+						<option value="me">ME</option>
+						<option value="bt">BT</option>
+				</select></td></tr>
+
+				<tr><td><label>Year of Pass:</label></td>
+					<td><select name="year">
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+				</select></td></tr>
+
+				<tr><td><label>Percentage:</label></td><td><textarea rows="1" cols="6" placeholder="%"></textarea></td></tr>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend><b>Skill Set</b></legend>
+			<input type="checkbox" name="skill" value="java"><label><b><i>Java</i></b></label>
+
+			<input type="checkbox" name="skill" value="c"><label><b><i>C</i></b></label>
+
+			<input type="checkbox" name="skill" value="c++"><label><b><i>C++</i></b></label>
+
+			<input type="checkbox" name="skill" value="python"><label><b><i>Python</i></b></label>
+
+			<input type="checkbox" name="skill" value="sql"><label><b><i>Sql</i></b></label>
+
+			<input type="checkbox" name="skill" value="jfswd"><label><b><i>Java Full Stack Web Development</i></b></label><br>
+
+			<input type="checkbox" name="skill" value="pfswd"><label><b><i>Python Full Stack Web Development</i></b></label>
+		</fieldset>
+
+		<fieldset>
+			<legend><b>Work Preference</b></legend>
+			<label>Preferred Location:</label><input type="radio" name="loc" value="banglore">Banglore<input type="radio"name="loc" value="chennai">Chennai<input type="radio" name="loc" value="pune">Pune
+		</fieldset><br>
+
+		<label>Upload Resume: </label><input type="file" name="resume"><br><br>
+
+		<input type="checkbox" name="agree" value="t&c"><label><b><i>I agree with all terms and conditions</i></b></label><br><br>
+
+		<input type="reset"><input type="submit">
+	</form>
+</body>
+</html>
